@@ -1,0 +1,678 @@
+{
+ "test_06": {
+  "prompt": "Area of room 2UsX..Hyo (m2)",
+  "key": "150.0",
+  "tolerance": "abs<0.1",
+  "cls": "MATCH",
+  "my_answer": 150.0,
+  "method": "150.0 (IfcSpace Body: 10.0x15.0 rectangle; = clear area between walls 38.9-48.9 / 0-15.0)",
+  "note": "No Qto/BaseQuantities in file.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {
+   "space Body extrusion 10x15": {
+    "value": 150.0,
+    "result": {
+     "right_answer": true
+    }
+   }
+  }
+ },
+ "test_07": {
+  "prompt": "Length of wall 22hy..SKC (m)",
+  "key": "10.2",
+  "tolerance": "abs<0.1",
+  "cls": "MATCH",
+  "my_answer": 10.2,
+  "method": "10.2 (Axis polyline 10200 mm = extrusion XDim; free-standing wall, no junctions)",
+  "note": "",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {
+   "axis/extrusion length": {
+    "value": 10.2,
+    "result": {
+     "right_answer": true
+    }
+   }
+  }
+ },
+ "test_08": {
+  "prompt": "Volume of room 2UsX..Hyo (m3)",
+  "key": "457.2",
+  "tolerance": "abs<0.1",
+  "cls": "MATCH",
+  "my_answer": 457.2,
+  "method": "457.2 (space Body 150 m2 x 3.048 m)",
+  "note": "Space is 3.048 m high while surrounding walls are 3.6 m and no slab is modelled; 150 x 3.6 = 540 would fail. Key follows the modelled space.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {
+   "space Body vol (h=3.048)": {
+    "value": 457.2,
+    "result": {
+     "right_answer": true
+    }
+   },
+   "floor area x wall height 3.6": {
+    "value": 540.0,
+    "result": {
+     "right_answer": false
+    }
+   }
+  }
+ },
+ "test_09": {
+  "prompt": "Centre distance of columns ..SMr / ..SMu (m)",
+  "key": "10.0",
+  "tolerance": "abs<0.1",
+  "cls": "MATCH",
+  "my_answer": 10.0,
+  "method": "10.0 (bbox centres x=-20.0 and x=-10.0, same y)",
+  "note": "Column names say 300x450 but geometry is 200x200; irrelevant to centre distance.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {}
+ },
+ "test_10": {
+  "prompt": "GlobalId of the 5 m wall",
+  "key": "22hyxvAPr65PFt9WZfHSP3",
+  "tolerance": "exact",
+  "cls": "MATCH",
+  "my_answer": "22hyxvAPr65PFt9WZfHSP3",
+  "method": "22hyxvAPr65PFt9WZfHSP3 (axis 5000 mm; only wall of 5 m among 16)",
+  "note": "",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {}
+ },
+ "geometry_test_06": {
+  "prompt": "Longest side of the non-square room (m)",
+  "key": "7.2 (accepts 6.9-7.4)",
+  "tolerance": "range [6.9,7.4]",
+  "cls": "MATCH",
+  "my_answer": 7.2,
+  "method": "7.2 centre-line (partition axis x=6.4 to wall axis x=13.6); inner clear 7.0; outer 7.4",
+  "note": "No IfcSpace in file: rooms inferred from walls (left room 6.1x6.1 clear = square; right room 7.0x6.1). Range accepts all three readings. Docstring mentions half score but the code returns a plain True for anything in range.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {
+   "inner clear 7.0": {
+    "value": 7.0,
+    "result": {
+     "right_answer": true
+    }
+   },
+   "outer 7.4": {
+    "value": 7.4,
+    "result": {
+     "right_answer": true
+    }
+   }
+  }
+ },
+ "geometry_test_07": {
+  "prompt": "Id of the shortest wall",
+  "key": "1pkLoAx5P7Lwxnk7MMv3Lz",
+  "tolerance": "exact",
+  "cls": "MATCH",
+  "my_answer": "1pkLoAx5P7Lwxnk7MMv3Lz",
+  "method": "1pkLoAx5P7Lwxnk7MMv3Lz (axis 2.1 m; next shortest 2.7 m)",
+  "note": "",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {}
+ },
+ "geometry_test_08": {
+  "prompt": "Distance between the longest walls (m)",
+  "key": "4.0",
+  "tolerance": "abs<=0.01",
+  "cls": "AMBIGUOUS",
+  "my_answer": 4.0,
+  "method": "4.0 clear distance between inner faces of the two longest walls (6.1 m at y=-4.4..-4.2, 5.9 m at y=-0.2..0)",
+  "note": "Centre-line distance 4.2 and outer-face distance 4.4 are both reasonable readings of \"distance between walls\" and fail with the 0.01 tolerance.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {
+   "centre-line 4.2": {
+    "value": 4.2,
+    "result": {
+     "right_answer": false
+    }
+   },
+   "outer faces 4.4": {
+    "value": 4.4,
+    "result": {
+     "right_answer": false
+    }
+   }
+  }
+ },
+ "geometry_test_09": {
+  "prompt": "Ids of the walls that form a triangle",
+  "key": "{..Hww, ..HX0, ..H$i}",
+  "tolerance": "exact set of 3",
+  "cls": "MATCH",
+  "my_answer": [
+   "2I2XyofMDDYhKncvMedHww",
+   "2I2XyofMDDYhKncvMedHX0",
+   "2I2XyofMDDYhKncvMedH$i"
+  ],
+  "method": "same 3 walls (the only non-orthogonal walls; profiles mitred, meeting at apex (0,-1) and base y=-5.6)",
+  "note": "",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {}
+ },
+ "geometry_test_10": {
+  "prompt": "Total inner length of walls ..YtE + ..Yr0 (m)",
+  "key": "5.9",
+  "tolerance": "abs<=0.01",
+  "cls": "MATCH",
+  "my_answer": 5.9,
+  "method": "5.9 = 3.5 (tE inner face x=0.2, y 0.2..3.7) + 2.4 (r0 inner face y=0.2, x 0.2..2.6)",
+  "note": "Axis sum 6.1 and outer 6.3 fail, but the prompt says \"inner\", so the key is the right reading.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {
+   "axis 6.1": {
+    "value": 6.1,
+    "result": {
+     "right_answer": false
+    }
+   },
+   "outer 6.3": {
+    "value": 6.3,
+    "result": {
+     "right_answer": false
+    }
+   }
+  }
+ },
+ "topological_test_06": {
+  "prompt": "Wall separating rooms ..UwKx and ..UwJB",
+  "key": "3Vyqk8cSj8TOuAk6zHUw89",
+  "tolerance": "exact",
+  "cls": "MATCH",
+  "my_answer": "3Vyqk8cSj8TOuAk6zHUw89",
+  "method": "..Uw89 (y 4.5..4.7; Kx below at y<=4.5, JB above at y>=4.7, x-overlap 5.1..7.5)",
+  "note": "No IfcRelSpaceBoundary in file; derived from geometry.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {}
+ },
+ "topological_test_07": {
+  "prompt": "Slabs that close room ..UwKx",
+  "key": "{..K11, ..K9m}",
+  "tolerance": "exact set",
+  "cls": "MATCH",
+  "my_answer": [
+   "1NO2FmQyX8Dx48Vy4bqK11",
+   "1NO2FmQyX8Dx48Vy4bqK9m"
+  ],
+  "method": "{K11 (floor, full 7.7x8.1), K9m (ceiling, covers x 5.1..7.7, y 0..4.7)}",
+  "note": "Ceiling slab ..K2W only touches the room footprint along the edge x=5.1 (no area overlap).",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {}
+ },
+ "topological_test_08": {
+  "prompt": "Columns touching room ..ZIPn",
+  "key": "{..ZIat, ..ZIH7}",
+  "tolerance": "exact set",
+  "cls": "MATCH",
+  "my_answer": [
+   "3wugWiepr7zgNK68VeZIat",
+   "3wugWiepr7zgNK68VeZIH7"
+  ],
+  "method": "{at (face x=3.6 on room edge), H7 (face y=2.9 on room edge)}",
+  "note": "Other columns IIS (x 5.45..5.65) and GO (y<1.14) do not touch room x 0.2..3.6, y 2.9..6.3.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {}
+ },
+ "topological_test_09": {
+  "prompt": "Room not adjacent to ..xNU",
+  "key": "3Vyqk8cSj8TOuAk6zHUwKx",
+  "tolerance": "exact",
+  "cls": "MATCH",
+  "my_answer": "3Vyqk8cSj8TOuAk6zHUwKx",
+  "method": "..UwKx (x 5.1..7.5, y 0.2..4.5; NU is x 0.2..2.8, y 4.7..7.9; no shared wall or corner)",
+  "note": "K5 shares wall ..89, JB shares wall ..IV.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {}
+ },
+ "topological_test_10": {
+  "prompt": "Room open to the exterior",
+  "key": "0rTWnvc$TEcxPkiz6YVMaY",
+  "tolerance": "exact",
+  "cls": "MATCH",
+  "my_answer": "0rTWnvc$TEcxPkiz6YVMaY",
+  "method": "..VMaY (east wall ..MJ only spans y 4.5..8.1, so the room edge x=7.7, y 0.2..4.5 has no wall)",
+  "note": "",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {}
+ },
+ "numeric_test_01": {
+  "prompt": "Net floor area of room ..nvVA (m2)",
+  "key": "17.11",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MATCH",
+  "my_answer": 17.11,
+  "method": "17.11 (space profile; check from walls: 12.92 + 3.99 + 0.20 strip under partial wall sD)",
+  "note": "",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {}
+ },
+ "numeric_test_02": {
+  "prompt": "Net floor area of all rooms (m2)",
+  "key": "42.7",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MATCH",
+  "my_answer": 42.7,
+  "method": "42.70 = 17.11 + 21.18 + 4.41 (spaces); check: 7.8x5.8 clear minus interior walls 2.54 = 42.70",
+  "note": "",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {}
+ },
+ "numeric_test_03": {
+  "prompt": "GFA of the second floor (m2)",
+  "key": "51.83",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MATCH",
+  "my_answer": 51.83,
+  "method": "51.83 = L2 outer wall outline (7.7x4.7 + 4.6x3.4)",
+  "note": "\"Second floor\" read as L2 (only 2 storeys; in UK/EU usage it would be a 3rd storey that does not exist). The L2 slab is 10.65x8.1 = 86.265 m2 (extends beyond the L2 walls) and L2 spaces sum 44.83 m2; both fail.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {
+   "L2 slab footprint 86.265": {
+    "value": 86.265,
+    "result": {
+     "right_answer": false
+    }
+   },
+   "L2 space NFA 44.83": {
+    "value": 44.83,
+    "result": {
+     "right_answer": false
+    }
+   }
+  }
+ },
+ "numeric_test_04": {
+  "prompt": "GFA of all storeys (m2)",
+  "key": "138.095",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MATCH",
+  "my_answer": 138.095,
+  "method": "138.095 = L1 outline 10.65x8.1 (86.265) + L2 outline 51.83",
+  "note": "Using slab footprints instead gives 172.53.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {
+   "slab footprints 2x86.265": {
+    "value": 172.53,
+    "result": {
+     "right_answer": false
+    }
+   }
+  }
+ },
+ "numeric_test_05": {
+  "prompt": "Inner net wall area, 4 walls (m2)",
+  "key": "33.6",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MATCH",
+  "my_answer": 33.6,
+  "method": "33.6 = room-facing exposed faces (2.9+3.0+0.2 nB end+2.0+3.1) x 3.0; no openings so net = gross",
+  "note": "Face-sampling script. Leaving out nB end face gives 33.0; axis length x h gives 34.8; both fail.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {
+   "exposed excl. nB end face": {
+    "value": 33.0,
+    "result": {
+     "right_answer": false
+    }
+   },
+   "axis length x h": {
+    "value": 34.8,
+    "result": {
+     "right_answer": false
+    }
+   }
+  }
+ },
+ "numeric_test_06": {
+  "prompt": "Outer net wall area, 4 walls (m2)",
+  "key": "36.0",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MATCH",
+  "my_answer": 36.0,
+  "method": "36.0 = exterior exposed faces incl. end faces (3.3+2.8+2.2+3.7) x 3.0; no openings",
+  "note": "Same file content as 005 apart from the header.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {
+   "axis length x h": {
+    "value": 34.8,
+    "result": {
+     "right_answer": false
+    }
+   }
+  }
+ },
+ "numeric_test_07": {
+  "prompt": "Inner net wall area, walls pI9 + m0 + gT (m2)",
+  "key": "20.82",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "AMBIGUOUS",
+  "my_answer": 20.22,
+  "method": "20.22 = south-room faces of listed walls (2.9+2.0+3.1) x 3 - door 1.8x2.1",
+  "note": "Key = 20.22 + 0.6, which is the 0.2 m end face of wall nB (not in the list), i.e. a room-boundary clear length of 5.1+3.1. The partition pI9 has two interior sides (both = 25.14). Untrimmed/axis = 21.42. No reading that uses only the three listed walls gives 20.82. Under a strict reading this is a MISMATCH.",
+  "test_with_my_answer": {
+   "right_answer": false
+  },
+  "alternatives": {
+   "room-side clear incl. nB end face (key)": {
+    "value": 20.82,
+    "result": {
+     "right_answer": true
+    }
+   },
+   "both sides of partition": {
+    "value": 25.14,
+    "result": {
+     "right_answer": false
+    }
+   },
+   "axis/untrimmed one side": {
+    "value": 21.42,
+    "result": {
+     "right_answer": false
+    }
+   }
+  }
+ },
+ "numeric_test_08": {
+  "prompt": "Outer net wall area, 4 walls (m2)",
+  "key": "27.3",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MATCH",
+  "my_answer": 27.3,
+  "method": "27.3 = 36.0 gross - openings (2x1.6 + 2.5 + 3.0 = 8.7)",
+  "note": "",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {}
+ },
+ "numeric_test_09": {
+  "prompt": "Outer gross wall area, 4 walls (m2)",
+  "key": "36.0",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MATCH",
+  "my_answer": 36.0,
+  "method": "36.0 (same outer faces as 006; openings ignored for gross)",
+  "note": "",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {}
+ },
+ "numeric_test_10": {
+  "prompt": "Inner gross wall area, nG + m0 + gT, \"do not trim, include intersecting areas\" (m2)",
+  "key": "24.6",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "AMBIGUOUS",
+  "my_answer": 25.2,
+  "method": "25.2 = untrimmed own inner faces (2.9+2.0+3.5) x 3",
+  "note": "Key 24.6 = (5.1+3.1) x 3: it adds the nB junction (0.2) but trims gT to 3.1, which partly contradicts \"do not trim\". Other readings: exposed 24.0, untrimmed + nB 25.8, both sides of nG 32.7. The extra sentence in the prompt does not pin down a single value.",
+  "test_with_my_answer": {
+   "right_answer": false
+  },
+  "alternatives": {
+   "exposed own faces 24.0": {
+    "value": 24.0,
+    "result": {
+     "right_answer": false
+    }
+   },
+   "room-side clear incl. nB end face (key)": {
+    "value": 24.6,
+    "result": {
+     "right_answer": true
+    }
+   },
+   "untrimmed + nB end": {
+    "value": 25.8,
+    "result": {
+     "right_answer": false
+    }
+   },
+   "both sides of nG": {
+    "value": 32.7,
+    "result": {
+     "right_answer": false
+    }
+   }
+  }
+ },
+ "numeric_test_11": {
+  "prompt": "Area of openings > 2 m2 (m2)",
+  "key": "11.25",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MATCH",
+  "my_answer": 11.25,
+  "method": "11.25 = 3.84 (2.4x1.6) + 3.0 (1.2x2.5) + 4.41 (2.1x2.1)",
+  "note": "One opening is exactly 2.0 m2 (1.0x2.0); strict \">\" excludes it, \">=\" gives 13.25.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {
+   ">= 2 m2": {
+    "value": 13.25,
+    "result": {
+     "right_answer": false
+    }
+   }
+  }
+ },
+ "numeric_test_12": {
+  "prompt": "Combined width of openings with a sill (m)",
+  "key": "3.4",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MATCH",
+  "my_answer": 3.4,
+  "method": "3.4 = 2.4 (sill 0.9) + 1.0 (sill 0.5); the other two openings start at z=0",
+  "note": "Geometry same as 011.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {}
+ },
+ "numeric_test_13": {
+  "prompt": "Length of all walls (m)",
+  "key": "24.3",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MATCH",
+  "my_answer": 24.3,
+  "method": "24.3 = sum of axis lengths 6.5+3.1+3.5+5.1+3.0+2.0+1.1 (walls butt, no overlaps)",
+  "note": "",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {}
+ },
+ "numeric_test_14": {
+  "prompt": "Area of the opening in slab ..PbrE (m2)",
+  "key": "3.625",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MATCH",
+  "my_answer": 3.625,
+  "method": "3.625 = 2.9 x 1.25 (single IfcOpeningElement)",
+  "note": "",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {}
+ },
+ "numeric_test_15": {
+  "prompt": "Number of openings > 2 m2",
+  "key": "3",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MATCH",
+  "my_answer": 3,
+  "method": "3 (wall 3.84, wall 2.4, slab 3.6; excluded: 2.0 exactly, 1.8)",
+  "note": "\">=\" would give 4. Counts the slab opening too.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {
+   ">= 2 m2": {
+    "value": 4,
+    "result": {
+     "right_answer": false
+    }
+   }
+  }
+ },
+ "numeric_test_16": {
+  "prompt": "Volume of openings in slab ..PbrE (m3)",
+  "key": "5.775",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MISMATCH",
+  "my_answer": 1.7325,
+  "method": "1.7325 = 2.4x1.5x0.3 + 2.9x0.75x0.3 (opening solids 1.08 + 0.6525)",
+  "note": "Key 5.775 = 3.6 + 2.175, the opening AREAS in m2, not volumes.",
+  "test_with_my_answer": {
+   "right_answer": false
+  },
+  "alternatives": {
+   "opening AREA sum (key)": {
+    "value": 5.775,
+    "result": {
+     "right_answer": true
+    }
+   }
+  }
+ },
+ "numeric_test_17": {
+  "prompt": "Net wall volume of all walls (m3)",
+  "key": "64.66",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MISMATCH",
+  "my_answer": 12.932,
+  "method": "12.932 (sum of wall solids with openings cut; gross 14.58 - openings 1.648)",
+  "note": "Key 64.66 = 24.3 x 3.0 - opening areas 8.24, the net one-side wall AREA in m2, not a volume (= 12.932 / 0.2).",
+  "test_with_my_answer": {
+   "right_answer": false
+  },
+  "alternatives": {
+   "gross volume (no opening deduction)": {
+    "value": 14.58,
+    "result": {
+     "right_answer": false
+    }
+   },
+   "net one-side wall AREA (key)": {
+    "value": 64.66,
+    "result": {
+     "right_answer": true
+    }
+   }
+  }
+ },
+ "numeric_test_18": {
+  "prompt": "Net volume of the non-rectangular room (m3)",
+  "key": "51.06",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MATCH",
+  "my_answer": 51.06,
+  "method": "51.06 = 17.02 m2 (space profile incl. 0.3x0.3 column void) x 3.0",
+  "note": "Without the column deduction it would be 51.33.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {
+   "without column deduction": {
+    "value": 51.33,
+    "result": {
+     "right_answer": false
+    }
+   }
+  }
+ },
+ "numeric_test_19": {
+  "prompt": "Net volume of all slabs (m3)",
+  "key": "22.6375",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "MISMATCH",
+  "my_answer": 15.53625,
+  "method": "15.536 = upper slab 6.791 (29.15x0.3 - openings 0.866 - 1.0875) + lower slab 8.745",
+  "note": "Key 22.6375 = 29.15 - 2.8875 - 3.625, the net AREA of the upper slab in m2.",
+  "test_with_my_answer": {
+   "right_answer": false
+  },
+  "alternatives": {
+   "upper slab only net vol": {
+    "value": 6.79125,
+    "result": {
+     "right_answer": false
+    }
+   },
+   "upper slab net AREA (key)": {
+    "value": 22.6375,
+    "result": {
+     "right_answer": true
+    }
+   }
+  }
+ },
+ "numeric_test_20": {
+  "prompt": "\"Perimeter in cubic meters\" of all rooms",
+  "key": "44.6",
+  "tolerance": "max(0.1, 0.1%)",
+  "cls": "TEXT ISSUE",
+  "my_answer": 44.6,
+  "method": "44.6 m = 20.8 + 15.4 + 8.4 (outer boundaries of the 3 spaces)",
+  "note": "Prompt asks for perimeter in cubic meters. The value matches the outer perimeter. If the inner boundary around the free-standing column (1.2) is included: 45.8.",
+  "test_with_my_answer": {
+   "right_answer": true
+  },
+  "alternatives": {
+   "incl. column-void perimeter": {
+    "value": 45.8,
+    "result": {
+     "right_answer": false
+    }
+   }
+  }
+ }
+}

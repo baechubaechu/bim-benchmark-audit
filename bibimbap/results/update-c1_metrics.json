@@ -1,0 +1,748 @@
+{
+ "test_11:center": {
+  "test": "test_11",
+  "variant": "center",
+  "prompt": "Rotate the wall with id 22hyxvAPr65PFt9WZfHSP3 by +90 degree around the z axis.",
+  "edited": "./work/upd/out/test_11_center.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_location": true,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_location": false,
+    "right_dimensions": false,
+    "integrity_constraint": true
+   },
+   "score": 0.3333333333333333,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "test_11:alt_origin": {
+  "test": "test_11",
+  "variant": "alt_origin",
+  "prompt": "Rotate the wall with id 22hyxvAPr65PFt9WZfHSP3 by +90 degree around the z axis.",
+  "edited": "./work/upd/out/test_11_origin.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_location": false,
+    "right_dimensions": true,
+    "integrity_constraint": false
+   },
+   "score": 0.3333333333333333,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_location": false,
+    "right_dimensions": false,
+    "integrity_constraint": true
+   },
+   "score": 0.3333333333333333,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [
+    [
+     "IfcWall:22hyxvAPr65PFt9WZfHSP3:Basic Wall:Generic - 200mm:160",
+     "IfcSpace:2UsXAbj6n0fwEWqdkVuHuP:274"
+    ],
+    [
+     "IfcWall:22hyxvAPr65PFt9WZfHSP3:Basic Wall:Generic - 200mm:160",
+     "IfcWall:2UsXAbj6n0fwEWqdkVuHuy:Basic Wall:Generic - 200mm:159"
+    ]
+   ],
+   "new_clashes_allow_touching=True": [
+    [
+     "IfcWall:22hyxvAPr65PFt9WZfHSP3:Basic Wall:Generic - 200mm:160",
+     "IfcSpace:2UsXAbj6n0fwEWqdkVuHuP:274"
+    ],
+    [
+     "IfcWall:22hyxvAPr65PFt9WZfHSP3:Basic Wall:Generic - 200mm:160",
+     "IfcWall:2UsXAbj6n0fwEWqdkVuHuy:Basic Wall:Generic - 200mm:159"
+    ],
+    [
+     "IfcWall:22hyxvAPr65PFt9WZfHSP3:Basic Wall:Generic - 200mm:160",
+     "IfcSlab:35us3eQxb9WeuHdxm2wKYO:Floor:Generic 300mm:1597466"
+    ]
+   ]
+  }
+ },
+ "test_11:alt_globalZ": {
+  "test": "test_11",
+  "variant": "alt_globalZ",
+  "prompt": "Rotate the wall with id 22hyxvAPr65PFt9WZfHSP3 by +90 degree around the z axis.",
+  "edited": "./work/upd/out/test_11_global.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_location": false,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_location": false,
+    "right_dimensions": false,
+    "integrity_constraint": true
+   },
+   "score": 0.3333333333333333,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "test_12:plus_x": {
+  "test": "test_12",
+  "variant": "plus_x",
+  "prompt": "Move the door by one meter in direction of x in the wall with id 11kJIqz$n2Jf_DfJV1SDYu.",
+  "edited": "./work/upd/out/test_12_plusx.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_location": false,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_location": false,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "test_12:alt_minus_x": {
+  "test": "test_12",
+  "variant": "alt_minus_x",
+  "prompt": "Move the door by one meter in direction of x in the wall with id 11kJIqz$n2Jf_DfJV1SDYu.",
+  "edited": "./work/upd/out/test_12_minusx.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_location": true,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_location": false,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "test_13:resize": {
+  "test": "test_13",
+  "variant": "resize",
+  "prompt": "Increase the height by 0.5 meters of the window with id 11kJIqz$n2Jf_DfJV1SDbS.",
+  "edited": "./work/upd/out/test_13_resize.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_location": true,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_location": false,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "test_13:alt_move_up": {
+  "test": "test_13",
+  "variant": "alt_move_up",
+  "prompt": "Increase the height by 0.5 meters of the window with id 11kJIqz$n2Jf_DfJV1SDbS.",
+  "edited": "./work/upd/out/test_13_move.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_location": true,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_location": false,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "test_14:move_down": {
+  "test": "test_14",
+  "variant": "move_down",
+  "prompt": "Decrease the height by 0.5 meters of the slab with the id 11kJIqz$n2Jf_DfJV1SCVP.",
+  "edited": "./work/upd/out/test_14_down.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_location": true,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_location": false,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [
+    [
+     "IfcSlab:11kJIqz$n2Jf_DfJV1SCVP:Floor:Generic 300mm:1601598",
+     "IfcSpace:2UsXAbj6n0fwEWqdkVuHuP:274"
+    ]
+   ],
+   "new_clashes_allow_touching=True": [
+    [
+     "IfcSlab:11kJIqz$n2Jf_DfJV1SCVP:Floor:Generic 300mm:1601598",
+     "IfcColumn:22hyxvAPr65PFt9WZfHS2T:M_Concrete-Rectangular-Column:"
+    ],
+    [
+     "IfcSlab:11kJIqz$n2Jf_DfJV1SCVP:Floor:Generic 300mm:1601598",
+     "IfcColumn:22hyxvAPr65PFt9WZfHS2w:M_Concrete-Rectangular-Column:"
+    ],
+    [
+     "IfcSlab:11kJIqz$n2Jf_DfJV1SCVP:Floor:Generic 300mm:1601598",
+     "IfcColumn:22hyxvAPr65PFt9WZfHS2x:M_Concrete-Rectangular-Column:"
+    ],
+    [
+     "IfcSlab:11kJIqz$n2Jf_DfJV1SCVP:Floor:Generic 300mm:1601598",
+     "IfcWall:22hyxvAPr65PFt9WZfHSc5:Basic Wall:Generic - 150mm:159"
+    ],
+    [
+     "IfcSlab:11kJIqz$n2Jf_DfJV1SCVP:Floor:Generic 300mm:1601598",
+     "IfcColumn:22hyxvAPr65PFt9WZfHSrj:M_Concrete-Rectangular-Column:"
+    ],
+    [
+     "IfcSlab:11kJIqz$n2Jf_DfJV1SCVP:Floor:Generic 300mm:1601598",
+     "IfcWall:2UsXAbj6n0fwEWqdkVuHup:Basic Wall:Generic - 200mm:159"
+    ],
+    [
+     "IfcSlab:11kJIqz$n2Jf_DfJV1SCVP:Floor:Generic 300mm:1601598",
+     "IfcWall:2UsXAbj6n0fwEWqdkVuHuy:Basic Wall:Generic - 200mm:159"
+    ],
+    [
+     "IfcSlab:11kJIqz$n2Jf_DfJV1SCVP:Floor:Generic 300mm:1601598",
+     "IfcWall:2UsXAbj6n0fwEWqdkVuHuz:Basic Wall:Generic - 200mm:159"
+    ]
+   ]
+  }
+ },
+ "test_15:move": {
+  "test": "test_15",
+  "variant": "move",
+  "prompt": "Move the column eith id 22hyxvAPr65PFt9WZfHSMu by -3 meters in direction of y.",
+  "edited": "./work/upd/out/test_15.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_location": true,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_location": false,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "geometry_test_11:lower_tops": {
+  "test": "geometry_test_11",
+  "variant": "lower_tops",
+  "prompt": "Decrease the height of all walls by 0.5 m on the 2nd storey",
+  "edited": "./work/upd/out/geometry_test_11.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "integrity_constraint": true,
+    "right_dimensions": true,
+    "right_location": true
+   },
+   "score": 1.0,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "integrity_constraint": true,
+    "right_dimensions": false,
+    "right_location": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "geometry_test_12:rotate_center": {
+  "test": "geometry_test_12",
+  "variant": "rotate_center",
+  "prompt": "Rotate wall by +45\u00b0 around its center which is parallel to wall with GlobalId = \"1$zxNs50z3OeFBpABtoN40\"",
+  "edited": "./work/upd/out/geometry_test_12.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "integrity_constraint": true,
+    "right_dimensions": true,
+    "right_location": false
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "integrity_constraint": true,
+    "right_dimensions": true,
+    "right_location": false
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "geometry_test_13:move_assembly": {
+  "test": "geometry_test_13",
+  "variant": "move_assembly",
+  "prompt": "Move the window by 3m along the x axis which is wider than 1.50m",
+  "edited": "./work/upd/out/geometry_test_13.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "integrity_constraint": true,
+    "right_dimensions": true,
+    "right_location": true
+   },
+   "score": 1.0,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "integrity_constraint": true,
+    "right_dimensions": true,
+    "right_location": false
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "geometry_test_14:one_edge": {
+  "test": "geometry_test_14",
+  "variant": "one_edge",
+  "prompt": "Increase the length of one side of the slab so that it forms a square",
+  "edited": "./work/upd/out/geometry_test_14_one_edge.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "integrity_constraint": true,
+    "right_dimensions": true,
+    "right_location": false
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "integrity_constraint": true,
+    "right_dimensions": false,
+    "right_location": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "geometry_test_14:alt_symmetric": {
+  "test": "geometry_test_14",
+  "variant": "alt_symmetric",
+  "prompt": "Increase the length of one side of the slab so that it forms a square",
+  "edited": "./work/upd/out/geometry_test_14_symmetric.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "integrity_constraint": true,
+    "right_dimensions": true,
+    "right_location": true
+   },
+   "score": 1.0,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "integrity_constraint": true,
+    "right_dimensions": false,
+    "right_location": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "geometry_test_15:move_tl": {
+  "test": "geometry_test_15",
+  "variant": "move_tl",
+  "prompt": "Move the column so that all columns form a rectangle",
+  "edited": "./work/upd/out/geometry_test_15_tl.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_dimensions": true,
+    "integrity_constraint": true,
+    "right_location": true
+   },
+   "score": 1.0,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_dimensions": true,
+    "integrity_constraint": true,
+    "right_location": false
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "geometry_test_15:alt_move_tr": {
+  "test": "geometry_test_15",
+  "variant": "alt_move_tr",
+  "prompt": "Move the column so that all columns form a rectangle",
+  "edited": "./work/upd/out/geometry_test_15_tr.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_dimensions": true,
+    "integrity_constraint": true,
+    "right_location": true
+   },
+   "score": 1.0,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_dimensions": true,
+    "integrity_constraint": true,
+    "right_location": false
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "topological_test_11:extend": {
+  "test": "topological_test_11",
+  "variant": "extend",
+  "prompt": "Change the height of all columns so that they touch the slab with id 0dxtXCDSn2mfP92h$AiPMM",
+  "edited": "./work/upd/out/topological_test_11.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_dimensions": true,
+    "right_location": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_dimensions": false,
+    "right_location": true,
+    "integrity_constraint": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": [
+    [
+     "IfcSlab:0dxtXCDSn2mfP92h$AiPMM:Floor:Generic - 12\":1603544",
+     "IfcColumn:0n4qMSuxfEFA0BeEfapSHZ:M_Concrete-Rectangular-Column:"
+    ],
+    [
+     "IfcSlab:0dxtXCDSn2mfP92h$AiPMM:Floor:Generic - 12\":1603544",
+     "IfcColumn:0n4qMSuxfEFA0BeEfapSQB:M_Concrete-Rectangular-Column:"
+    ]
+   ]
+  }
+ },
+ "topological_test_12:free_end": {
+  "test": "topological_test_12",
+  "variant": "free_end",
+  "prompt": "Shorten the length of the wall by 1m that is outside of the walls with ids 3Vyqk8cSj8TOuAk6zHUwBs, 3Vyqk8cSj8TOuAk6zHUw89, 3Vyqk8cSj8TOuAk6zHUwMJ, 3Vyqk8cSj8TOuAk6zHUwNQ, 3Vyqk8cSj8TOuAk6zHUwAt, 3Vyqk8cSj8TOuAk6zHUwAc",
+  "edited": "./work/upd/out/topological_test_12_free_end.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_dimensions": true,
+    "right_location": false,
+    "integrity_constraint": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_dimensions": false,
+    "right_location": true,
+    "integrity_constraint": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "topological_test_12:alt_symmetric": {
+  "test": "topological_test_12",
+  "variant": "alt_symmetric",
+  "prompt": "Shorten the length of the wall by 1m that is outside of the walls with ids 3Vyqk8cSj8TOuAk6zHUwBs, 3Vyqk8cSj8TOuAk6zHUw89, 3Vyqk8cSj8TOuAk6zHUwMJ, 3Vyqk8cSj8TOuAk6zHUwNQ, 3Vyqk8cSj8TOuAk6zHUwAt, 3Vyqk8cSj8TOuAk6zHUwAc",
+  "edited": "./work/upd/out/topological_test_12_symmetric.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_dimensions": true,
+    "right_location": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_dimensions": false,
+    "right_location": true,
+    "integrity_constraint": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "topological_test_13:move": {
+  "test": "topological_test_13",
+  "variant": "move",
+  "prompt": "Change\tthe position of the window with the id 0HbU4cYqD2SBtSJYoQ_eW1 so that its inner right side touches the outside of the wall with the id 0HbU4cYqD2SBtSJYoQ_eXK",
+  "edited": "./work/upd/out/topological_test_13.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_location": true,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_location": false,
+    "right_dimensions": true,
+    "integrity_constraint": false
+   },
+   "score": 0.3333333333333333,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "topological_test_14:trim": {
+  "test": "topological_test_14",
+  "variant": "trim",
+  "prompt": "Trim the beams so that they touch the wall with the id 1A1LNnHqHFQwR1jv6PQkyv",
+  "edited": "./work/upd/out/topological_test_14.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_dimensions": true,
+    "right_location": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_dimensions": false,
+    "right_location": true,
+    "integrity_constraint": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": []
+  }
+ },
+ "topological_test_15:lower": {
+  "test": "topological_test_15",
+  "variant": "lower",
+  "prompt": "Change the position of the slab with id 0CJwXarnHAeA7eFXxxI_is that it lays on the slab with the id 0CJwXarnHAeA7eFXxxI_hO.",
+  "edited": "./work/upd/out/topological_test_15.ifc",
+  "ifcopenshell": "0.8.3.post2",
+  "result": {
+   "metrics": {
+    "right_location": true,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "error": null
+  },
+  "unedited": {
+   "metrics": {
+    "right_location": false,
+    "right_dimensions": true,
+    "integrity_constraint": true
+   },
+   "score": 0.6666666666666666,
+   "error": null
+  },
+  "diag": {
+   "changed_non_targets": [],
+   "new_clashes_allow_touching=False": [],
+   "new_clashes_allow_touching=True": [
+    [
+     "IfcSlab:0CJwXarnHAeA7eFXxxI_hO:Floor:Generic 300mm:1602563",
+     "IfcSlab:0CJwXarnHAeA7eFXxxI_is:Floor:Generic 300mm:1603053"
+    ],
+    [
+     "IfcSlab:0CJwXarnHAeA7eFXxxI_is:Floor:Generic 300mm:1603053",
+     "IfcWall:0CJwXarnHAeA7eFXxxI_j9:Basic Wall:Generic - 200mm:160"
+    ],
+    [
+     "IfcSlab:0CJwXarnHAeA7eFXxxI_is:Floor:Generic 300mm:1603053",
+     "IfcWall:0CJwXarnHAeA7eFXxxI_jY:Basic Wall:Generic - 200mm:160"
+    ],
+    [
+     "IfcSlab:0CJwXarnHAeA7eFXxxI_is:Floor:Generic 300mm:1603053",
+     "IfcWall:0CJwXarnHAeA7eFXxxI_l5:Basic Wall:Generic - 200mm:160"
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,311 @@
+{
+ "test_16_A": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "test_16_B": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "test_16_C": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": true
+  },
+  1.0
+ ],
+ "test_17_A": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "test_17_B": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "test_17_C": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "test_18_A": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "test_18_B": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "test_18_C": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": true
+  },
+  1.0
+ ],
+ "test_19_A": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "test_19_B": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "test_19_C": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "test_20_A": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "test_20_B": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "test_20_C": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": true
+  },
+  1.0
+ ],
+ "geometry_test_16_A": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "geometry_test_16_B": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "geometry_test_16_C": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "geometry_test_17_A": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "geometry_test_17_B": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "geometry_test_17_C": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "geometry_test_18_A": [
+  {
+   "CRASH": "RuntimeError"
+  },
+  0
+ ],
+ "geometry_test_18_B": [
+  {
+   "CRASH": "RuntimeError"
+  },
+  0
+ ],
+ "geometry_test_18_C": [
+  {
+   "CRASH": "RuntimeError"
+  },
+  0
+ ],
+ "geometry_test_19_A": [
+  {
+   "CRASH": "RuntimeError"
+  },
+  0
+ ],
+ "geometry_test_19_B": [
+  {
+   "CRASH": "RuntimeError"
+  },
+  0
+ ],
+ "geometry_test_19_C": [
+  {
+   "CRASH": "RuntimeError"
+  },
+  0
+ ],
+ "geometry_test_20_A": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "geometry_test_20_B": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "geometry_test_20_C": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "topological_test_16_A": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "topological_test_16_B": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "topological_test_16_C": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "topological_test_17_A": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "topological_test_17_B": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "topological_test_17_C": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": true
+  },
+  1.0
+ ],
+ "topological_test_18_A": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "topological_test_18_B": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "topological_test_18_C": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": true
+  },
+  1.0
+ ],
+ "topological_test_19_A": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "topological_test_19_B": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": false
+  },
+  0.5
+ ],
+ "topological_test_19_C": [
+  {
+   "object_not_exists": true,
+   "integrity_constraint": true
+  },
+  1.0
+ ],
+ "topological_test_20_A": [
+  {
+   "object_not_exists": false,
+   "integrity_constraint": false
+  },
+  0.0
+ ],
+ "topological_test_20_B": [
+  {
+   "object_not_exists": false,
+   "integrity_constraint": false
+  },
+  0.0
+ ],
+ "topological_test_20_C": [
+  {
+   "object_not_exists": false,
+   "integrity_constraint": true
+  },
+  0.5
+ ]
+}

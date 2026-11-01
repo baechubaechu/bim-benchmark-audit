@@ -1,0 +1,8 @@
+﻿model,mean_orig,mean_fix,solved_orig,solved_fix,delete_solved_fix,rank_orig,rank_fix
+claude-sonnet,0.453,0.521,6.0,59.0,53.0,3,3
+deepseek-v3.2,0.432,0.48,7.0,47.0,40.0,5,4
+gemini-flash-3.0,0.495,0.579,5.0,22.0,17.0,1,1
+gemma4-31B,0.375,0.421,3.0,32.0,29.0,7,6
+gpt-5.4,0.439,0.467,4.0,28.0,24.0,4,5
+gpt-5.4-mini,0.398,0.41,2.0,19.0,17.0,6,7
+qwen3.6-plus,0.478,0.54,11.0,50.0,39.0,2,2
