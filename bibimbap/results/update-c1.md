@@ -1,3 +1,5 @@
+> **2026-11-02 재실행 알림:** geometry_test_12의 탈락(39.2°)은 재실행에서 재현되지 않았다(다시 만든 답은 45.0°로 측정되어 만점). 자세한 내용은 `rerun-2026-11-02/RERUN.md`. 아래 표는 처음 점검 때의 기록이다.
+
 # BIBIMBAP C1 perfect-answer check: the 15 UPDATE tasks
 
 **Setup.** For each task I built an edited IFC from the prompt and the model geometry. I did not use the test's expected values to decide the answer. Each file was scored with BIBIMBAP's own `data/tests/<name>.execute_test`, with no patches, under **ifcopenshell 0.8.3.post2**, the version `requirements.txt` pins (`ios083` copy). The score is the mean of the boolean metrics.

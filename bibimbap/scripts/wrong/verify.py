@@ -2,7 +2,6 @@
 of every product in source vs edited file. Reports added/removed products and products whose bbox moved > 5 mm.
 Usage: python3 -I verify.py manifest.json verify.json"""
 import sys, json
-sys.path.insert(0, "./work/create/ios083")
 import numpy as np, ifcopenshell, ifcopenshell.geom, ifcopenshell.util.shape as us
 st = ifcopenshell.geom.settings()
 cache = {}

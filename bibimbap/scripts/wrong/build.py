@@ -1,11 +1,11 @@
 """Build deliberately wrong edited IFCs for the 45 BIBIMBAP CRUD edit tasks.
-Run: python3 -I build.py [task ...]   (uses ifcopenshell 0.8.3.post2 from create/ios083 for building, like the create builds)
+Run: python3 -I build.py [task ...]   (ifcopenshell 0.8.3.post2; needs $WORK/create/out, $WORK/upd/out, $WORK/del_out from the other steps)
 Writes out/<task>__<variant>.ifc and manifest.json."""
 import sys, os, json, re, csv, traceback
-B = "./work"
-sys.path.insert(0, B + "/create/ios083")
-sys.path.insert(1, B + "/create")
-sys.path.insert(2, B + "/wrong")
+B = os.environ.get("WORK", os.path.abspath("work"))
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(1, os.path.join(HERE, "..", "create"))
+sys.path.insert(2, HERE)
 import numpy as np
 import ifcopenshell
 import ifcopenshell.guid
@@ -564,5 +564,5 @@ if __name__ == "__main__":
         except Exception:
             traceback.print_exc()
     name = "manifest.json" if not only else "manifest_partial.json"
-    json.dump(MAN, open(B + "/wrong/" + name, "w"), indent=1)
+    json.dump(MAN, open(os.path.join(OUT, "..", name), "w"), indent=1)
     print(len(MAN), "entries")

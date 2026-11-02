@@ -46,8 +46,11 @@ def make_edit(src, targets, variant, out):
                 extra.append(rel)
         if variant == "C":
             f.remove(el); continue
+        extra_ids = [x.id() for x in extra]  # 삭제 뒤 이미 지워진 엔티티를 건드리지 않도록 id로 다시 찾음
         ifcopenshell.api.run("root.remove_product", f, product=el)
-        for x in extra:
+        for xid in extra_ids:
+            try: x = f.by_id(xid)
+            except RuntimeError: continue
             try:
                 if x.is_a("IfcProduct"): ifcopenshell.api.run("root.remove_product", f, product=x)
                 else: f.remove(x)

@@ -24,7 +24,7 @@ Code, results and per-task evidence for auditing two public AI-based IFC editing
 | <그림 2> 직접 판정별 의미 점수, ④ | `bim-edit/scripts/delete_audit.py` → `bim-edit/results/delete_audit.csv` |
 | <표 3> 정정 전후 해결 건수 | `bim-edit/results/delete_audit.csv` + `bim-edit/results/eval_flat.csv` (아래 "정정 규칙") |
 | VeriBIM 사례 | `veribim/` |
-| <표 4> BIBIMBAP 결과 | `bibimbap/results/README.md`(요약)와 같은 폴더의 과제별 문서 |
+| <표 4> BIBIMBAP 결과 | `bibimbap/results/README.md`(요약), 과제별 문서, 재실행 결과 `bibimbap/results/rerun-2026-11-02/` |
 
 ## 사용한 자료와 버전
 
@@ -56,10 +56,13 @@ Code, results and per-task evidence for auditing two public AI-based IFC editing
 정답 객체가 있고(`n_gt ≥ 1`) 채점기가 비교 대상을 찾지 못했으면(`best_match_guid = null`) 지운 것으로 봅니다. 결과 파일이 있는 4개 모델에서 위 직접 판정과 200건 중 200건 일치했습니다. 결과 파일이 없는 모델에는 보존 확인을 할 수 없으므로 이 값은 상한입니다.
 
 ### BIBIMBAP (`bibimbap/`)
-- ① 삭제: `bibimbap_c1.py`가 세 가지 답을 만들어 원 채점 스크립트로 채점합니다. A = IfcOpenShell 표준 함수 `root.remove_product`로 대상만 삭제, B = A + 채운 개구부와 벽 연결 관계까지 삭제, C = 엔티티만 지우고 속성·관계를 남긴 불완전 삭제.
-- ① 생성·수정, ④ 틀린 답 401개: 과제별 편집 내용, 의도, 점수는 `create-c1.md`, `update-c1.md`, `wrong-answers.md`, `wrong-full-table.md`, `wrong-flagged-evidence.md`(0.9점 이상 받은 틀린 답의 근거)에 있습니다.
-- ② 조회 정답: `retrieve-check.md`, `retrieve-values.json` (IFC에서 다시 계산한 값)
+- ① 삭제 (`scripts/delete/`): 세 가지 답을 만들어 원 채점 스크립트로 채점합니다. A = IfcOpenShell 표준 함수 `root.remove_product`로 대상만 삭제, B = A + 채운 개구부와 벽 연결 관계까지 삭제, C = 엔티티만 지우고 속성·관계를 남긴 불완전 삭제.
+- ① 생성 (`scripts/create/`): `ifcopenshell.api`로 클래스, 층 소속, 압출 형상, 문의 개구부(IfcRelVoidsElement·IfcRelFillsElement)까지 만든 맞는 답과, 똑같이 맞는 다른 모델링 방식(변형)을 채점합니다.
+- ① 수정 (`scripts/update/`): 지시대로 고친 답과, 지시가 여러 뜻으로 읽힐 때의 다른 해석을 채점합니다.
+- ④ 틀린 답 (`scripts/wrong/`): 편집 45과제마다 지시를 분명히 어긴 답(총 401개)과 기준 답을 채점합니다. 판정 근거는 `results/wrong-flagged-evidence.md`(0.9점 이상 받은 틀린 답), 전체 표는 `results/wrong-full-table.md`.
+- ② 조회 정답 (`scripts/retrieve/`): `results/retrieve-check.md`, `results/retrieve-values.json` (IFC에서 다시 계산한 값)
 - ③ 대상 ID: `scripts/c3_ids.py` → `results/c3_ids.json`
+- 과제별 설명: `results/create-c1.md`, `results/update-c1.md`, `results/bibimbap-c1.md`, `results/wrong-answers.md`
 
 ## 재현 순서
 
@@ -76,15 +79,18 @@ python bim-edit/scripts/delete_audit.py           # → analysis/delete_audit.cs
 python bim-edit/scripts/checklist_audit.py out.json
 python bim-edit/scripts/delete_scoring_mechanism.py
 
-# BIBIMBAP: 저장소(667004e)를 /tmp/bib/bibimbap, 데이터(a0291d6)를 /tmp/bib/olddata에 두고
-pip install ifcopenshell==0.8.3.post2
-python bibimbap/scripts/bibimbap_c1.py /tmp/bib/bibimbap /tmp/bib/olddata/data c1.json
+# BIBIMBAP: ①·④ 전체 (결과는 $WORK, 기본 ./work)
+git clone https://github.com/nbharathik/bibimbap /tmp/bib/bibimbap        # 채점 코드: 커밋 667004e
+git -C /tmp/bib/bibimbap worktree add /tmp/bib/olddata a0291d6           # IFC·질문 데이터
+pip install ifcopenshell==0.8.3.post2 numpy shapely
+bash bibimbap/scripts/run_all.sh
 ```
 
 BIM-Edit 스크립트는 `pandas`, `numpy`가 필요합니다. `ifc_lite.py`는 경계상자 계산용 간이 IFC 리더입니다.
 
 ## 알림
 
-- BIBIMBAP 생성·수정 답안과 틀린 답을 만든 스크립트(`bibimbap/scripts/create_build.py`, `update_build.py`, `wrong/build.py` 등)는 작업 당시 쓰던 보조 모듈 일부(생성용 `lib.py`의 객체 생성 함수, `edits.py`, `common.py`, `run.py`의 `TARGETS`)가 보존되지 않아 이 저장소만으로는 바로 실행되지 않습니다. 해당 과제는 결과 폴더의 과제별 문서에 편집 내용과 채점 결과를 남겼고, 보조 모듈은 복원되는 대로 추가합니다. 스크립트 안의 `./work` 경로는 작업 폴더를 뜻합니다.
+- 2026-11-02에 `run_all.sh`로 BIBIMBAP 점검을 처음부터 다시 돌려 저장된 결과와 비교했습니다(`bibimbap/results/rerun-2026-11-02/RERUN.md`). 한 과제(geometry_test_12, 45° 회전)를 빼고 모두 같았습니다. 이 과제의 예전 감점은 재현되지 않아, 맞는 답이 감점되거나 정답이 틀린 과제는 **23개**로 고쳤습니다.
+- 생성·수정 답안 스크립트의 보조 모듈(`create/lib.py`, `update/edits.py`, `update/common.py`, `update/run.py`)은 처음 작업 환경에서 보존되지 않아 다시 작성했고, 위 재실행으로 같은 점수가 나오는 것을 확인했습니다.
 - 결과 폴더의 `.md` 파일은 점검하면서 남긴 기록입니다.
 - 삭제 채점 불일치는 VeriBIM(github.com/NTUZZH/VeriBIM)이, BIM-Edit 인공 장면 문·창 삭제 4과제의 대상 ID 오류는 Hugging Face `BIM-Edit-Tasks` 토론(2026년 8월)이 먼저 지적했습니다.

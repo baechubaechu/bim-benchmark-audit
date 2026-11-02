@@ -1,0 +1,752 @@
+{
+ "ifcopenshell": "0.8.3.post2",
+ "runs": {
+  "geometry_test_01__A": {
+   "src": "/tmp/bib/olddata/data/ifc/01/01/01_01_001.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "3ruOm2HOjEYRQvG1xctnBj"
+   ],
+   "debug": {
+    "bbox": [
+     0.0,
+     3.0,
+     0.0,
+     3.0,
+     3.0,
+     3.2
+    ],
+    "shape_dims": [
+     3.0,
+     3.0,
+     0.2
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "geometry_test_01__B_contained_L1": {
+   "src": "/tmp/bib/olddata/data/ifc/01/01/01_01_001.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "1keILCoBf7wvtj3O_UNA6f"
+   ],
+   "debug": {
+    "bbox": [
+     0.0,
+     3.0,
+     0.0,
+     3.0,
+     3.0,
+     3.2
+    ],
+    "shape_dims": [
+     3.0,
+     3.0,
+     0.2
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "geometry_test_02__A": {
+   "src": "/tmp/bib/olddata/data/ifc/01/01/01_01_002.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "09NudBsNXAC83TS_wwTWKE"
+   ],
+   "debug": {
+    "bbox": [
+     2.35,
+     2.65,
+     2.35,
+     2.65,
+     0.0,
+     3.0
+    ],
+    "shape_dims": [
+     0.3,
+     0.3,
+     3.0
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "geometry_test_03__A": {
+   "src": "/tmp/bib/olddata/data/ifc/01/01/01_01_003.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "3_UB6Q6q9F696lcKG$bmam"
+   ],
+   "debug": {
+    "bbox": [
+     -0.45,
+     0.45,
+     1.5,
+     1.7,
+     0.0,
+     2.1
+    ],
+    "shape_dims": [
+     0.9,
+     0.2,
+     2.1
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "geometry_test_04__A": {
+   "src": "/tmp/bib/olddata/data/ifc/01/01/01_01_004.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 0.6667
+   },
+   "score": 0.916675,
+   "new": [
+    "10IXgrH2n2vO_dbyOUKBse"
+   ],
+   "debug": {
+    "bbox": [
+     0.2,
+     6.35,
+     0.2,
+     6.7,
+     0.0,
+     3.0
+    ],
+    "shape_dims": [
+     6.15,
+     6.5,
+     3.0
+    ],
+    "spatial_containment": 0.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "geometry_test_04__B_aggregated_AND_hand_contained": {
+   "src": "/tmp/bib/olddata/data/ifc/01/01/01_01_004.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "16w3tUFg5CeQVlRmgd6JAj"
+   ],
+   "debug": {
+    "bbox": [
+     0.2,
+     6.35,
+     0.2,
+     6.7,
+     0.0,
+     3.0
+    ],
+    "shape_dims": [
+     6.15,
+     6.5,
+     3.0
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "geometry_test_05__A": {
+   "src": "/tmp/bib/olddata/data/ifc/empty.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "33fO9EAvT8uvYH2bKNQYN3"
+   ],
+   "debug": {
+    "bbox": [
+     10.0,
+     15.0,
+     4.9,
+     5.1,
+     0.0,
+     3.0
+    ],
+    "shape_dims": [
+     5.0,
+     0.2,
+     3.0
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "test_01__A": {
+   "src": "/tmp/bib/olddata/data/ifc/basic_tasks.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "3oCAqsObj3nR68RQG5np6l"
+   ],
+   "debug": {
+    "bbox": [
+     23.8,
+     24.8,
+     15.0,
+     15.2,
+     0.0,
+     2.0
+    ],
+    "shape_dims": [
+     1.0,
+     0.2,
+     2.0
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "test_01__B_bonsai_door": {
+   "src": "/tmp/bib/olddata/data/ifc/basic_tasks.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 0.0,
+    "integrity_constraint": 0.75
+   },
+   "score": 0.6875,
+   "new": [
+    "0iD6hli9L0ORbMp5hKpA3b"
+   ],
+   "debug": {
+    "bbox": [
+     23.775,
+     24.825,
+     14.995,
+     15.215,
+     0.0,
+     2.025
+    ],
+    "shape_dims": [
+     1.05,
+     0.22,
+     2.025
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [
+     "IfcOpeningElement 2WVfZqSdDEsALhJ3EIsLOY Opening"
+    ],
+    "clash_records": [
+     {
+      "a_guid": "0iD6hli9L0ORbMp5hKpA3b",
+      "b_guid": "2WVfZqSdDEsALhJ3EIsLOY",
+      "clash_type": 2,
+      "distance": 0.0
+     }
+    ]
+   }
+  },
+  "test_02__A": {
+   "src": "/tmp/bib/olddata/data/ifc/basic_tasks.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "0NMMmceM18RB77VS54FJsB"
+   ],
+   "debug": {
+    "bbox": [
+     -35.0,
+     -25.0,
+     -2.5,
+     2.5,
+     0.0,
+     0.2
+    ],
+    "shape_dims": [
+     10.0,
+     5.0,
+     0.2
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "test_03__A": {
+   "src": "/tmp/bib/olddata/data/ifc/basic_tasks.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "2E3_IQ8ID0M90JWOk$bohA"
+   ],
+   "debug": {
+    "bbox": [
+     2.5,
+     7.5,
+     2.513,
+     7.513,
+     3.8,
+     4.1
+    ],
+    "shape_dims": [
+     5.0,
+     5.0,
+     0.3
+    ],
+    "spatial_containment": 0.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "test_03__B_opening_oversized_z": {
+   "src": "/tmp/bib/olddata/data/ifc/basic_tasks.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 0.6667
+   },
+   "score": 0.916675,
+   "new": [
+    "3x1LQbPFL92hU4zq_IjGhy"
+   ],
+   "debug": {
+    "bbox": [
+     2.5,
+     7.5,
+     2.513,
+     7.513,
+     3.79,
+     4.11
+    ],
+    "shape_dims": [
+     5.0,
+     5.0,
+     0.32
+    ],
+    "spatial_containment": 0.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [
+     "IfcSpace 2UsXAbj6n0fwEWqdkVuHuP 274"
+    ],
+    "clash_records": [
+     {
+      "a_guid": "3x1LQbPFL92hU4zq_IjGhy",
+      "b_guid": "2UsXAbj6n0fwEWqdkVuHuP",
+      "clash_type": 2,
+      "distance": 0.0
+     }
+    ]
+   }
+  },
+  "test_04__A": {
+   "src": "/tmp/bib/olddata/data/ifc/basic_tasks.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "2mJ575qoT3QwRVYOME2PNQ"
+   ],
+   "debug": {
+    "bbox": [
+     11.85,
+     12.15,
+     7.85,
+     8.15,
+     0.0,
+     3.0
+    ],
+    "shape_dims": [
+     0.3,
+     0.3,
+     3.0
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "test_05__A": {
+   "src": "/tmp/bib/olddata/data/ifc/basic_tasks.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "3rM4rvXyb8Mwtrqgx$QG$N"
+   ],
+   "debug": {
+    "bbox": [
+     0.0,
+     15.0,
+     -10.1,
+     -9.9,
+     0.0,
+     3.6
+    ],
+    "shape_dims": [
+     15.0,
+     0.2,
+     3.6
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "topological_test_01__A": {
+   "src": "/tmp/bib/olddata/data/ifc/01/02/01_02_001.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "1ppr7V1gzDih3Xraq$QBWq"
+   ],
+   "debug": {
+    "bbox": [
+     4.85,
+     5.05,
+     0.2,
+     6.2,
+     0.0,
+     2.7
+    ],
+    "shape_dims": [
+     6.0,
+     0.2,
+     2.7
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "topological_test_02__A": {
+   "src": "/tmp/bib/olddata/data/ifc/01/02/01_02_002.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "2oK9rSh3f2FhIa0ZOgpIib"
+   ],
+   "debug": {
+    "bbox": [
+     2.375,
+     2.675,
+     3.05,
+     3.35,
+     0.0,
+     2.7
+    ],
+    "shape_dims": [
+     0.3,
+     0.3,
+     2.7
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "topological_test_03__A": {
+   "src": "/tmp/bib/olddata/data/ifc/01/02/01_02_003.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "0beYeWn3jFV8ZxIA56IBIu"
+   ],
+   "debug": {
+    "bbox": [
+     1.7,
+     3.35,
+     3.1,
+     3.3,
+     0.0,
+     2.7
+    ],
+    "shape_dims": [
+     1.65,
+     0.2,
+     2.7
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "topological_test_03__B_full_length_wall": {
+   "src": "/tmp/bib/olddata/data/ifc/01/02/01_02_003.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "1OFeuoFSf7gv5WTx3HRUEo"
+   ],
+   "debug": {
+    "bbox": [
+     0.2,
+     4.85,
+     3.1,
+     3.3,
+     0.0,
+     2.7
+    ],
+    "shape_dims": [
+     4.65,
+     0.2,
+     2.7
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "topological_test_03__P_overlap_shifted": {
+   "src": "/tmp/bib/olddata/data/ifc/01/02/01_02_003.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 0.6667
+   },
+   "score": 0.916675,
+   "new": [
+    "2eZFqm2jbCxPSc8ZmkFAED"
+   ],
+   "debug": {
+    "bbox": [
+     0.2,
+     4.85,
+     3.15,
+     3.35,
+     0.0,
+     2.7
+    ],
+    "shape_dims": [
+     4.65,
+     0.2,
+     2.7
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [
+     "IfcWall 0rMMWWDi1E0Qbe7dlPjRcx Basic Wall:Generic - 200mm:1603705",
+     "IfcWall 0rMMWWDi1E0Qbe7dlPjRaK Basic Wall:Generic - 200mm:1603798"
+    ],
+    "clash_records": [
+     {
+      "a_guid": "2eZFqm2jbCxPSc8ZmkFAED",
+      "b_guid": "0rMMWWDi1E0Qbe7dlPjRaK",
+      "clash_type": 2,
+      "distance": 0.0
+     },
+     {
+      "a_guid": "2eZFqm2jbCxPSc8ZmkFAED",
+      "b_guid": "0rMMWWDi1E0Qbe7dlPjRcx",
+      "clash_type": 2,
+      "distance": 0.0
+     }
+    ]
+   }
+  },
+  "topological_test_04__A": {
+   "src": "/tmp/bib/olddata/data/ifc/01/02/01_02_004.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "25JGRh7vv8MB4a4DU0tfpL"
+   ],
+   "debug": {
+    "bbox": [
+     0.0,
+     5.05,
+     0.0,
+     6.4,
+     -0.3,
+     0.0
+    ],
+    "shape_dims": [
+     5.05,
+     6.4,
+     0.3
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "topological_test_05__A": {
+   "src": "/tmp/bib/olddata/data/ifc/01/02/01_02_005.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 1.0
+   },
+   "score": 1.0,
+   "new": [
+    "0_rnXELJj1AArdjaopEFY$"
+   ],
+   "debug": {
+    "bbox": [
+     1.05,
+     1.95,
+     0.0,
+     0.2,
+     0.0,
+     2.1
+    ],
+    "shape_dims": [
+     0.9,
+     0.2,
+     2.1
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [],
+    "clash_records": []
+   }
+  },
+  "topological_test_05__B_bonsai_door": {
+   "src": "/tmp/bib/olddata/data/ifc/01/02/01_02_005.ifc",
+   "metrics": {
+    "object_exists": 1.0,
+    "right_location": 1.0,
+    "right_dimensions": 1.0,
+    "integrity_constraint": 0.6667
+   },
+   "score": 0.916675,
+   "new": [
+    "2rw7bWQML3TuX534ZvU2oz"
+   ],
+   "debug": {
+    "bbox": [
+     1.025,
+     1.975,
+     -0.015,
+     0.205,
+     0.0,
+     2.125
+    ],
+    "shape_dims": [
+     0.95,
+     0.22,
+     2.125
+    ],
+    "spatial_containment": 1.0,
+    "elements_preserved": 1.0,
+    "clash_partners": [
+     "IfcOpeningElement 2GZBLX4W94MAYmRNR5eqED Opening"
+    ],
+    "clash_records": [
+     {
+      "a_guid": "2rw7bWQML3TuX534ZvU2oz",
+      "b_guid": "2GZBLX4W94MAYmRNR5eqED",
+      "clash_type": 2,
+      "distance": 0.0
+     }
+    ]
+   }
+  }
+ }
+}

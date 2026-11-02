@@ -157,6 +157,12 @@ def p03b(f):
     p03(f, full=True)
 
 
+@task("topological_test_03", "P_overlap_shifted")
+def p03p(f):
+    # probe: the full-length wall shifted 50 mm off the stubs, to see whether the collision check catches overlaps
+    wall(f, 0.2, 3.25, 4.85, 3.25, 2.7, 0.2, storey(f, "L1"))
+
+
 @task("topological_test_04")
 def p04(f):
     # ceiling slab (z 2.7..3.0) exists; floor slab missing -> 300 mm floor slab under the 4 walls, 0..5.05 x 0..6.4
@@ -164,7 +170,7 @@ def p04(f):
 
 
 @task("topological_test_05")
-def p05(f):
+def p05(f, style="box"):
     # exterior south wall 3Vyq..AwAc (x 0.2..7.7, y 0..0.2); 0.9 x 2.1 door at x=1.5 (into the room x 0.2..4.9)
     w = f.by_guid("3Vyqk8cSj8TOuAk6zHUwAc")
     import ifcopenshell.util.placement as up
@@ -172,7 +178,12 @@ def p05(f):
     m = up.get_local_placement(w.ObjectPlacement)
     # local x along wall; find u such that world x = 1.5
     u = (1500.0 - m[0, 3]) / m[0, 0] / 1000.0
-    door_in_wall(f, w, u=u, width=0.9, height=2.1)
+    door_in_wall(f, w, u=u, width=0.9, height=2.1, door_style=style)
+
+
+@task("topological_test_05", "B_bonsai_door")
+def p05b(f):
+    p05(f, style="bonsai")
 
 
 def finalize(f):

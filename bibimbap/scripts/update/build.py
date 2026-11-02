@@ -7,7 +7,7 @@ from edits import world, set_world, translate, rotate_z_about
 from common import bbox
 
 D = "/tmp/bib/olddata/data/ifc/"
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out")
+OUT = os.path.join(os.environ.get("WORK", os.path.abspath("work")), "upd", "out")
 os.makedirs(OUT, exist_ok=True)
 
 

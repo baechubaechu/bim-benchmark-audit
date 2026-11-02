@@ -1,0 +1,1497 @@
+[
+ {
+  "test": "test_16",
+  "ifc": "basic_tasks.ifc",
+  "targets": [
+   "22hyxvAPr65PFt9WZfHS2x"
+  ],
+  "targets_in_file": 1,
+  "classes": [
+   "IfcColumn"
+  ],
+  "A": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "22hyxvAPr65PFt9WZfHS2x": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelDefinesByProperties",
+     "IfcRelDefinesByType"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "B": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "22hyxvAPr65PFt9WZfHS2x": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelDefinesByProperties",
+     "IfcRelDefinesByType"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "C": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "sub": {
+    "22hyxvAPr65PFt9WZfHS2x": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [],
+    "non_target_unchanged": true
+   }
+  }
+ },
+ {
+  "test": "test_17",
+  "ifc": "basic_tasks.ifc",
+  "targets": [
+   "11kJIqz$n2Jf_DfJV1SDY7"
+  ],
+  "targets_in_file": 1,
+  "classes": [
+   "IfcDoor"
+  ],
+  "A": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "11kJIqz$n2Jf_DfJV1SDY7": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": false,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelAssociatesMaterial",
+     "IfcRelDefinesByProperties",
+     "IfcRelDefinesByType",
+     "IfcRelFillsElement"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "B": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "11kJIqz$n2Jf_DfJV1SDY7": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcOpeningElement",
+     "IfcPropertySet",
+     "IfcRelAssociatesMaterial",
+     "IfcRelDefinesByProperties",
+     "IfcRelDefinesByType",
+     "IfcRelFillsElement",
+     "IfcRelVoidsElement"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "C": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "11kJIqz$n2Jf_DfJV1SDY7": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": false,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [],
+    "non_target_unchanged": true
+   }
+  }
+ },
+ {
+  "test": "test_18",
+  "ifc": "basic_tasks.ifc",
+  "targets": [
+   "0APGbZXNKfgPNB$VQQZ0pi"
+  ],
+  "targets_in_file": 1,
+  "classes": [
+   "IfcOpeningElement"
+  ],
+  "A": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "0APGbZXNKfgPNB$VQQZ0pi": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcRelFillsElement",
+     "IfcRelVoidsElement"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "B": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "0APGbZXNKfgPNB$VQQZ0pi": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcRelFillsElement",
+     "IfcRelVoidsElement"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "C": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "sub": {
+    "0APGbZXNKfgPNB$VQQZ0pi": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [],
+    "non_target_unchanged": true
+   }
+  }
+ },
+ {
+  "test": "test_19",
+  "ifc": "basic_tasks.ifc",
+  "targets": [
+   "2UsXAbj6n0fwEWqdkVuHyn"
+  ],
+  "targets_in_file": 1,
+  "classes": [
+   "IfcWall"
+  ],
+  "A": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "2UsXAbj6n0fwEWqdkVuHyn": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelConnectsPathElements",
+     "IfcRelDefinesByProperties"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "B": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "2UsXAbj6n0fwEWqdkVuHyn": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelConnectsPathElements",
+     "IfcRelDefinesByProperties"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "C": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "2UsXAbj6n0fwEWqdkVuHyn": {
+     "wall_conn": false,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [],
+    "non_target_unchanged": true
+   }
+  }
+ },
+ {
+  "test": "test_20",
+  "ifc": "basic_tasks.ifc",
+  "targets": [
+   "2UsXAbj6n0fwEWqdkVuHyo"
+  ],
+  "targets_in_file": 1,
+  "classes": [
+   "IfcSpace"
+  ],
+  "A": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "2UsXAbj6n0fwEWqdkVuHyo": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelDefinesByProperties",
+     "IfcRelDefinesByType"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "B": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "2UsXAbj6n0fwEWqdkVuHyo": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelDefinesByProperties",
+     "IfcRelDefinesByType"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "C": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "sub": {
+    "2UsXAbj6n0fwEWqdkVuHyo": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [],
+    "non_target_unchanged": true
+   }
+  }
+ },
+ {
+  "test": "geometry_test_16",
+  "ifc": "01/01/01_01_016.ifc",
+  "targets": [
+   "1g0NIEjcH1lfGqbYWRqt6L"
+  ],
+  "targets_in_file": 1,
+  "classes": [
+   "IfcDoor"
+  ],
+  "A": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "1g0NIEjcH1lfGqbYWRqt6L": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": false,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelAssociatesMaterial",
+     "IfcRelDefinesByProperties",
+     "IfcRelFillsElement"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "B": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "1g0NIEjcH1lfGqbYWRqt6L": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcOpeningElement",
+     "IfcPropertySet",
+     "IfcRelAssociatesMaterial",
+     "IfcRelDefinesByProperties",
+     "IfcRelFillsElement",
+     "IfcRelVoidsElement"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "C": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "1g0NIEjcH1lfGqbYWRqt6L": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": false,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [],
+    "non_target_unchanged": true
+   }
+  }
+ },
+ {
+  "test": "geometry_test_17",
+  "ifc": "01/01/01_01_017.ifc",
+  "targets": [
+   "1G$Ejw1Tn27RsUWQGSEz6r",
+   "1G$Ejw1Tn27RsUWQGSEz6s",
+   "1G$Ejw1Tn27RsUWQGSEz59",
+   "1G$Ejw1Tn27RsUWQGSEz58",
+   "1u4oG4Ltr15fMWjwJ4pN4F",
+   "1u4oG4Ltr15fMWjwJ4pNPJ",
+   "1u4oG4Ltr15fMWjwJ4pNUQ",
+   "1u4oG4Ltr15fMWjwJ4pN5R",
+   "1u4oG4Ltr15fMWjwJ4pNOG",
+   "1u4oG4Ltr15fMWjwJ4pNV8"
+  ],
+  "targets_in_file": 10,
+  "classes": [
+   "IfcWall",
+   "IfcWall",
+   "IfcWall",
+   "IfcWall",
+   "IfcWall",
+   "IfcWall",
+   "IfcWall",
+   "IfcWall",
+   "IfcWall",
+   "IfcWall"
+  ],
+  "A": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "1G$Ejw1Tn27RsUWQGSEz6r": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1G$Ejw1Tn27RsUWQGSEz6s": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1G$Ejw1Tn27RsUWQGSEz59": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1G$Ejw1Tn27RsUWQGSEz58": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pN4F": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pNPJ": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pNUQ": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pN5R": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pNOG": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pNV8": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelConnectsPathElements",
+     "IfcRelDefinesByProperties"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "B": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "1G$Ejw1Tn27RsUWQGSEz6r": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1G$Ejw1Tn27RsUWQGSEz6s": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1G$Ejw1Tn27RsUWQGSEz59": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1G$Ejw1Tn27RsUWQGSEz58": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pN4F": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pNPJ": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pNUQ": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pN5R": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pNOG": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pNV8": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelConnectsPathElements",
+     "IfcRelDefinesByProperties"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "C": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "1G$Ejw1Tn27RsUWQGSEz6r": {
+     "wall_conn": false,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1G$Ejw1Tn27RsUWQGSEz6s": {
+     "wall_conn": false,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1G$Ejw1Tn27RsUWQGSEz59": {
+     "wall_conn": false,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1G$Ejw1Tn27RsUWQGSEz58": {
+     "wall_conn": false,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pN4F": {
+     "wall_conn": false,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pNPJ": {
+     "wall_conn": false,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pNUQ": {
+     "wall_conn": false,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pN5R": {
+     "wall_conn": false,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pNOG": {
+     "wall_conn": false,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1u4oG4Ltr15fMWjwJ4pNV8": {
+     "wall_conn": false,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [],
+    "non_target_unchanged": true
+   }
+  }
+ },
+ {
+  "test": "geometry_test_18",
+  "ifc": "01/01/01_01_018.ifc",
+  "targets": [
+   "1xzI3PuNvF1RRUjZb8YIP1",
+   "1xzI3PuNvF1RRUjZb8YIP0",
+   "1xzI3PuNvF1RRUjZb8YIUz",
+   "1xzI3PuNvF1RRUjZb8YINv",
+   "1xzI3PuNvF1RRUjZb8YINr",
+   "1xzI3PuNvF1RRUjZb8YINu"
+  ],
+  "targets_in_file": 2,
+  "classes": [
+   "IfcWindow",
+   "IfcWindow"
+  ],
+  "A": {
+   "metrics": {
+    "CRASH": "RuntimeError: Instance with GlobalId '1xzI3PuNvF1RRUjZb8YIP1' not found"
+   },
+   "score": null,
+   "sub": {
+    "1xzI3PuNvF1RRUjZb8YIP1": {
+     "wall_conn": "CRASH RuntimeError",
+     "containment": "CRASH RuntimeError",
+     "openings": "CRASH RuntimeError",
+     "aggregation": "CRASH RuntimeError"
+    },
+    "1xzI3PuNvF1RRUjZb8YIP0": {
+     "wall_conn": "CRASH RuntimeError",
+     "containment": "CRASH RuntimeError",
+     "openings": "CRASH RuntimeError",
+     "aggregation": "CRASH RuntimeError"
+    },
+    "1xzI3PuNvF1RRUjZb8YIUz": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": false,
+     "aggregation": true
+    },
+    "1xzI3PuNvF1RRUjZb8YINv": {
+     "wall_conn": "CRASH RuntimeError",
+     "containment": "CRASH RuntimeError",
+     "openings": "CRASH RuntimeError",
+     "aggregation": "CRASH RuntimeError"
+    },
+    "1xzI3PuNvF1RRUjZb8YINr": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": false,
+     "aggregation": true
+    },
+    "1xzI3PuNvF1RRUjZb8YINu": {
+     "wall_conn": "CRASH RuntimeError",
+     "containment": "CRASH RuntimeError",
+     "openings": "CRASH RuntimeError",
+     "aggregation": "CRASH RuntimeError"
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelAssociatesMaterial",
+     "IfcRelDefinesByProperties",
+     "IfcRelFillsElement"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "B": {
+   "metrics": {
+    "CRASH": "RuntimeError: Instance with GlobalId '1xzI3PuNvF1RRUjZb8YIP1' not found"
+   },
+   "score": null,
+   "sub": {
+    "1xzI3PuNvF1RRUjZb8YIP1": {
+     "wall_conn": "CRASH RuntimeError",
+     "containment": "CRASH RuntimeError",
+     "openings": "CRASH RuntimeError",
+     "aggregation": "CRASH RuntimeError"
+    },
+    "1xzI3PuNvF1RRUjZb8YIP0": {
+     "wall_conn": "CRASH RuntimeError",
+     "containment": "CRASH RuntimeError",
+     "openings": "CRASH RuntimeError",
+     "aggregation": "CRASH RuntimeError"
+    },
+    "1xzI3PuNvF1RRUjZb8YIUz": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1xzI3PuNvF1RRUjZb8YINv": {
+     "wall_conn": "CRASH RuntimeError",
+     "containment": "CRASH RuntimeError",
+     "openings": "CRASH RuntimeError",
+     "aggregation": "CRASH RuntimeError"
+    },
+    "1xzI3PuNvF1RRUjZb8YINr": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "1xzI3PuNvF1RRUjZb8YINu": {
+     "wall_conn": "CRASH RuntimeError",
+     "containment": "CRASH RuntimeError",
+     "openings": "CRASH RuntimeError",
+     "aggregation": "CRASH RuntimeError"
+    },
+    "non_target_missing_classes": [
+     "IfcOpeningElement",
+     "IfcPropertySet",
+     "IfcRelAssociatesMaterial",
+     "IfcRelDefinesByProperties",
+     "IfcRelFillsElement",
+     "IfcRelVoidsElement"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "C": {
+   "metrics": {
+    "CRASH": "RuntimeError: Instance with GlobalId '1xzI3PuNvF1RRUjZb8YIP1' not found"
+   },
+   "score": null,
+   "sub": {
+    "1xzI3PuNvF1RRUjZb8YIP1": {
+     "wall_conn": "CRASH RuntimeError",
+     "containment": "CRASH RuntimeError",
+     "openings": "CRASH RuntimeError",
+     "aggregation": "CRASH RuntimeError"
+    },
+    "1xzI3PuNvF1RRUjZb8YIP0": {
+     "wall_conn": "CRASH RuntimeError",
+     "containment": "CRASH RuntimeError",
+     "openings": "CRASH RuntimeError",
+     "aggregation": "CRASH RuntimeError"
+    },
+    "1xzI3PuNvF1RRUjZb8YIUz": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": false,
+     "aggregation": true
+    },
+    "1xzI3PuNvF1RRUjZb8YINv": {
+     "wall_conn": "CRASH RuntimeError",
+     "containment": "CRASH RuntimeError",
+     "openings": "CRASH RuntimeError",
+     "aggregation": "CRASH RuntimeError"
+    },
+    "1xzI3PuNvF1RRUjZb8YINr": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": false,
+     "aggregation": true
+    },
+    "1xzI3PuNvF1RRUjZb8YINu": {
+     "wall_conn": "CRASH RuntimeError",
+     "containment": "CRASH RuntimeError",
+     "openings": "CRASH RuntimeError",
+     "aggregation": "CRASH RuntimeError"
+    },
+    "non_target_missing_classes": [],
+    "non_target_unchanged": true
+   }
+  }
+ },
+ {
+  "test": "geometry_test_19",
+  "ifc": "01/01/01_01_019.ifc",
+  "targets": [
+   "1mRYVM4YfFFBRkcbz1hH$F",
+   "1mRYVM4YfFFBRkcbz1hH_L"
+  ],
+  "targets_in_file": 1,
+  "classes": [
+   "IfcWindow"
+  ],
+  "A": {
+   "metrics": {
+    "CRASH": "RuntimeError: Instance with GlobalId '1mRYVM4YfFFBRkcbz1hH$F' not found"
+   },
+   "score": null,
+   "sub": {
+    "1mRYVM4YfFFBRkcbz1hH$F": {
+     "wall_conn": "CRASH RuntimeError",
+     "containment": "CRASH RuntimeError",
+     "openings": "CRASH RuntimeError",
+     "aggregation": "CRASH RuntimeError"
+    },
+    "1mRYVM4YfFFBRkcbz1hH_L": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": false,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelAssociatesMaterial",
+     "IfcRelDefinesByProperties",
+     "IfcRelFillsElement"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "B": {
+   "metrics": {
+    "CRASH": "RuntimeError: Instance with GlobalId '1mRYVM4YfFFBRkcbz1hH$F' not found"
+   },
+   "score": null,
+   "sub": {
+    "1mRYVM4YfFFBRkcbz1hH$F": {
+     "wall_conn": "CRASH RuntimeError",
+     "containment": "CRASH RuntimeError",
+     "openings": "CRASH RuntimeError",
+     "aggregation": "CRASH RuntimeError"
+    },
+    "1mRYVM4YfFFBRkcbz1hH_L": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcOpeningElement",
+     "IfcPropertySet",
+     "IfcRelAssociatesMaterial",
+     "IfcRelDefinesByProperties",
+     "IfcRelFillsElement",
+     "IfcRelVoidsElement"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "C": {
+   "metrics": {
+    "CRASH": "RuntimeError: Instance with GlobalId '1mRYVM4YfFFBRkcbz1hH$F' not found"
+   },
+   "score": null,
+   "sub": {
+    "1mRYVM4YfFFBRkcbz1hH$F": {
+     "wall_conn": "CRASH RuntimeError",
+     "containment": "CRASH RuntimeError",
+     "openings": "CRASH RuntimeError",
+     "aggregation": "CRASH RuntimeError"
+    },
+    "1mRYVM4YfFFBRkcbz1hH_L": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": false,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [],
+    "non_target_unchanged": true
+   }
+  }
+ },
+ {
+  "test": "geometry_test_20",
+  "ifc": "01/01/01_01_020.ifc",
+  "targets": [
+   "0lwZAgQMb7yAIJTmmcGloi"
+  ],
+  "targets_in_file": 1,
+  "classes": [
+   "IfcWall"
+  ],
+  "A": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "0lwZAgQMb7yAIJTmmcGloi": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelConnectsPathElements",
+     "IfcRelDefinesByProperties"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "B": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "0lwZAgQMb7yAIJTmmcGloi": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelConnectsPathElements",
+     "IfcRelDefinesByProperties"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "C": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "0lwZAgQMb7yAIJTmmcGloi": {
+     "wall_conn": false,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [],
+    "non_target_unchanged": true
+   }
+  }
+ },
+ {
+  "test": "topological_test_16",
+  "ifc": "01/02/01_02_016.ifc",
+  "targets": [
+   "3cmsjRvPb4wf9t15K203Cj"
+  ],
+  "targets_in_file": 1,
+  "classes": [
+   "IfcWall"
+  ],
+  "A": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "3cmsjRvPb4wf9t15K203Cj": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelConnectsPathElements",
+     "IfcRelDefinesByProperties"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "B": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "3cmsjRvPb4wf9t15K203Cj": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelConnectsPathElements",
+     "IfcRelDefinesByProperties"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "C": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "3cmsjRvPb4wf9t15K203Cj": {
+     "wall_conn": false,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [],
+    "non_target_unchanged": true
+   }
+  }
+ },
+ {
+  "test": "topological_test_17",
+  "ifc": "01/02/01_02_017.ifc",
+  "targets": [
+   "2IIWDJ6bzEPxU4iXeUX9ti",
+   "2IIWDJ6bzEPxU4iXeUX9rM",
+   "2IIWDJ6bzEPxU4iXeUX9_B",
+   "2IIWDJ6bzEPxU4iXeUX9ow",
+   "2IIWDJ6bzEPxU4iXeUX9rK"
+  ],
+  "targets_in_file": 5,
+  "classes": [
+   "IfcColumn",
+   "IfcColumn",
+   "IfcColumn",
+   "IfcColumn",
+   "IfcColumn"
+  ],
+  "A": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "2IIWDJ6bzEPxU4iXeUX9ti": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "2IIWDJ6bzEPxU4iXeUX9rM": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "2IIWDJ6bzEPxU4iXeUX9_B": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "2IIWDJ6bzEPxU4iXeUX9ow": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "2IIWDJ6bzEPxU4iXeUX9rK": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelDefinesByProperties",
+     "IfcRelDefinesByType"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "B": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "2IIWDJ6bzEPxU4iXeUX9ti": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "2IIWDJ6bzEPxU4iXeUX9rM": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "2IIWDJ6bzEPxU4iXeUX9_B": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "2IIWDJ6bzEPxU4iXeUX9ow": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "2IIWDJ6bzEPxU4iXeUX9rK": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelDefinesByProperties",
+     "IfcRelDefinesByType"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "C": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "sub": {
+    "2IIWDJ6bzEPxU4iXeUX9ti": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "2IIWDJ6bzEPxU4iXeUX9rM": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "2IIWDJ6bzEPxU4iXeUX9_B": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "2IIWDJ6bzEPxU4iXeUX9ow": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "2IIWDJ6bzEPxU4iXeUX9rK": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [],
+    "non_target_unchanged": true
+   }
+  }
+ },
+ {
+  "test": "topological_test_18",
+  "ifc": "01/02/01_02_018.ifc",
+  "targets": [
+   "3Vyqk8cSj8TOuAk6zHUwK5"
+  ],
+  "targets_in_file": 1,
+  "classes": [
+   "IfcSpace"
+  ],
+  "A": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "3Vyqk8cSj8TOuAk6zHUwK5": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelDefinesByProperties",
+     "IfcRelDefinesByType"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "B": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "3Vyqk8cSj8TOuAk6zHUwK5": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelDefinesByProperties",
+     "IfcRelDefinesByType"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "C": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "sub": {
+    "3Vyqk8cSj8TOuAk6zHUwK5": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [],
+    "non_target_unchanged": true
+   }
+  }
+ },
+ {
+  "test": "topological_test_19",
+  "ifc": "01/02/01_02_019.ifc",
+  "targets": [
+   "251vDGWZj4fBEsYpTPQwFu"
+  ],
+  "targets_in_file": 1,
+  "classes": [
+   "IfcColumn"
+  ],
+  "A": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "251vDGWZj4fBEsYpTPQwFu": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelDefinesByProperties",
+     "IfcRelDefinesByType"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "B": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": false
+   },
+   "score": 0.5,
+   "sub": {
+    "251vDGWZj4fBEsYpTPQwFu": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelDefinesByProperties",
+     "IfcRelDefinesByType"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "C": {
+   "metrics": {
+    "object_not_exists": true,
+    "integrity_constraint": true
+   },
+   "score": 1.0,
+   "sub": {
+    "251vDGWZj4fBEsYpTPQwFu": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [],
+    "non_target_unchanged": true
+   }
+  }
+ },
+ {
+  "test": "topological_test_20",
+  "ifc": "01/02/01_02_020.ifc",
+  "targets": [
+   "0dc_dU7Cj6aRLiY5JtJ$t0",
+   "0dc_dU7Cj6aRLiY5JtJ$qt",
+   "0Ub9$WlTH44eNTzbw3KFF4",
+   "251vDGWZj4fBEsYpTPQwFu"
+  ],
+  "targets_in_file": 4,
+  "classes": [
+   "IfcColumn",
+   "IfcColumn",
+   "IfcColumn",
+   "IfcColumn"
+  ],
+  "A": {
+   "metrics": {
+    "object_not_exists": false,
+    "integrity_constraint": false
+   },
+   "score": 0.0,
+   "sub": {
+    "0dc_dU7Cj6aRLiY5JtJ$t0": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "0dc_dU7Cj6aRLiY5JtJ$qt": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "0Ub9$WlTH44eNTzbw3KFF4": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "251vDGWZj4fBEsYpTPQwFu": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelDefinesByProperties",
+     "IfcRelDefinesByType"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "B": {
+   "metrics": {
+    "object_not_exists": false,
+    "integrity_constraint": false
+   },
+   "score": 0.0,
+   "sub": {
+    "0dc_dU7Cj6aRLiY5JtJ$t0": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "0dc_dU7Cj6aRLiY5JtJ$qt": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "0Ub9$WlTH44eNTzbw3KFF4": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "251vDGWZj4fBEsYpTPQwFu": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [
+     "IfcPropertySet",
+     "IfcRelDefinesByProperties",
+     "IfcRelDefinesByType"
+    ],
+    "non_target_unchanged": false
+   }
+  },
+  "C": {
+   "metrics": {
+    "object_not_exists": false,
+    "integrity_constraint": true
+   },
+   "score": 0.5,
+   "sub": {
+    "0dc_dU7Cj6aRLiY5JtJ$t0": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "0dc_dU7Cj6aRLiY5JtJ$qt": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "0Ub9$WlTH44eNTzbw3KFF4": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "251vDGWZj4fBEsYpTPQwFu": {
+     "wall_conn": true,
+     "containment": true,
+     "openings": true,
+     "aggregation": true
+    },
+    "non_target_missing_classes": [],
+    "non_target_unchanged": true
+   }
+  }
+ }
+]

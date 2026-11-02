@@ -1,7 +1,7 @@
 """Score wrong-answer IFCs with BIBIMBAP's own tests. Run with ifcopenshell 0.8.3.post2 on PYTHONPATH.
 Usage: python3 -I score.py manifest.json result.json   (manifest: list of {task, variant, src, path, why})"""
 import sys, json, importlib, traceback, io, contextlib
-sys.path.insert(0, "./work/create/ios083")
+pass
 sys.path.insert(1, "/tmp/bib/bibimbap")
 import ifcopenshell
 assert ifcopenshell.version == "0.8.3.post2", ifcopenshell.version

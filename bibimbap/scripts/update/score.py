@@ -1,8 +1,5 @@
 # Score built answers with BIBIMBAP execute_test under ifcopenshell 0.8.3.post2 (pinned version), + diagnostics.
 import sys, os
-IOS = "./work/create/ios083"
-if len(sys.argv) > 1 and sys.argv[1] == "--v09": sys.argv.pop(1)
-else: sys.path.insert(0, IOS)
 sys.path.insert(1, "/tmp/bib/bibimbap")
 import json, importlib, io, contextlib, csv, ifcopenshell
 import data.tests.integrity_utils as iu
@@ -10,7 +7,8 @@ sys.path.insert(2, os.path.dirname(os.path.abspath(__file__))); from run import 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = "/tmp/bib/olddata/data"
 rows = {r["test"]: r for r in csv.DictReader(open(f"{DATA}/prompts/all_questions.csv")) if r["CRUD"].strip() == "update"}
-paths = json.load(open(os.path.join(HERE, "out", "paths.json")))
+OUTDIR = os.path.join(os.environ.get("WORK", os.path.abspath("work")), "upd", "out")
+paths = json.load(open(os.path.join(OUTDIR, "paths.json")))
 
 def run(test, src, edited):
     mod = importlib.import_module(f"data.tests.{test}")
@@ -54,6 +52,6 @@ if __name__ == "__main__":
         if not tag.startswith("0.9"): r["diag"] = diag(src, edited, TARGETS[test])
         res[key] = r
         print(key, "\n   ", r["result"], "\n    unedited:", r["unedited"]["metrics"], "\n    diag:", r.get("diag"), flush=True)
-    out = os.path.join(HERE, f"update-c1_metrics_{tag}.json")
+    out = os.path.join(os.environ.get("WORK", os.path.abspath("work")), f"update-c1_metrics_{tag}.json")
     old = json.load(open(out)) if (only and os.path.exists(out)) else {}
     old.update(res); json.dump(old, open(out, "w"), indent=1)

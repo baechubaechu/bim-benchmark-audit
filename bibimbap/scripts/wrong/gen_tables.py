@@ -1,6 +1,7 @@
 """Generate markdown tables + flagged list from results.json and verify.json."""
 import json, collections
-B = "./work/wrong/"
+import os
+B = os.environ.get("WORK", os.path.abspath("work")) + "/wrong/"
 R = json.load(open(B + "results.json"))["results"]
 V = {(v["task"], v["variant"]): v for v in json.load(open(B + "verify.json"))}
 ABBR = {"object_exists": "OE", "object_not_exists": "ONE", "right_location": "RL", "right_dimensions": "RD", "integrity_constraint": "IC"}
