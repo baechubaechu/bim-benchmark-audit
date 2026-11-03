@@ -88,6 +88,22 @@ bash bibimbap/scripts/run_all.sh
 
 BIM-Edit 스크립트는 `pandas`, `numpy`가 필요합니다. `ifc_lite.py`는 경계상자 계산용 간이 IFC 리더입니다.
 
+## 다시 판정해 보려면 (재판정 안내)
+
+이 점검의 판정은 연구자 1인이 했습니다. 다른 사람이 같은 자료로 판정을 확인할 수 있도록 아래 순서를 권합니다.
+
+**1. BIM-Edit: 사람 판단이 들어가지 않는 부분**
+삭제 결과의 "지웠는가·다른 객체를 건드렸는가"는 `delete_audit.py`가 GlobalId와 경계상자로 기계적으로 판정합니다(위 "판정 기준"). 같은 공개 데이터로 다시 돌려 `bim-edit/results/delete_audit.csv`와 같은지 보면 됩니다. 몇 건을 골라 IFC 뷰어에서 대상 객체가 정말 사라졌는지 눈으로 확인할 수도 있습니다.
+
+**2. BIBIMBAP: 사람 판단이 들어간 부분**
+"이 답이 지시대로 맞게 고친 것인가 / 분명히 틀린 것인가"는 사람이 정한 것입니다. 확인 순서는 다음과 같습니다.
+1. `bash bibimbap/scripts/run_all.sh`로 답안 IFC를 모두 만듭니다(`$WORK/create/out`, `$WORK/upd/out`, `$WORK/del_out`, `$WORK/wrong/out`).
+2. `bibimbap/rejudge_template.csv`를 엽니다. 답안 하나가 한 줄이고(463줄: 기준 답과 틀린 답 401개), 과제·변형 이름, 연구자가 적은 이유(`why`), 채점 점수, 답안 파일 위치가 들어 있습니다.
+3. 원 과제 지시문(`/tmp/bib/olddata/data/prompts/all_questions.csv`의 `question`)을 읽고, 답안 파일을 IFC 뷰어(예: Bonsai, BIMvision)로 열어 `판정` 칸에 **맞음 / 틀림 / 애매** 중 하나를, `이유` 칸에 근거를 적습니다. 연구자의 `why`를 먼저 보지 않고 판정한 뒤 비교하면 독립 판정이 됩니다.
+4. 연구자 판정은 `구분` 칸(기준 답 = 맞는 답, 틀린 답)과 같습니다. 일치하지 않는 줄이 재판정 결과입니다.
+
+과제별로 왜 그 답을 맞다고 보았는지는 `bibimbap/results/create-c1.md`, `update-c1.md`, `bibimbap-c1.md`에, 0.9점 이상 받은 틀린 답의 근거는 `wrong-flagged-evidence.md`에 있습니다. 표에서 `(borderline)`이 붙은 변형은 허용 오차나 해석에 따라 맞다고 볼 여지가 있는 답이라 따로 표시했습니다.
+
 ## 알림
 
 - 2026-11-02에 `run_all.sh`로 BIBIMBAP 점검을 처음부터 다시 돌려 저장된 결과와 비교했습니다(`bibimbap/results/rerun-2026-11-02/RERUN.md`). 한 과제(geometry_test_12, 45° 회전)를 빼고 모두 같았습니다. 이 과제의 예전 감점은 재현되지 않아, 맞는 답이 감점되거나 정답이 틀린 과제는 **23개**로 고쳤습니다.
